@@ -35,7 +35,7 @@ public class DP_CoinChange {
         dp[0]=0;
         for( int i=1;i<=amount;i++){
             for( int coin:coins){
-                if(i-coin>=0){
+                if(i>=coin){
                     dp[i]=Math.min(dp[i],1+dp[i-coin]);
                 }
             }
@@ -44,8 +44,8 @@ public class DP_CoinChange {
         return (dp[amount]==Integer.MAX_VALUE?-1:dp[amount]);
     }
 
-    //approach 2
-
+    //approach 3
+//
 //    public static int coinChange(int[] coins, int amount) {
 //        int[][]arr= new int [coins.length][amount+1];
 //         for( int i=0;i<coins.length;i++){
@@ -54,11 +54,13 @@ public class DP_CoinChange {
 //
 //         for( int i=1;i<coins.length;i++){
 //             for(int j=0;j<=amount;j++){
-//                 if(coins[i]>j){
-//                     arr[i][j]=arr[i-1][j];
+//                 if(coins[i] <= j){
+//                     // Choosing the better of the two options:
+//                     arr[i][j] = Math.min(1 + arr[i][j - coins[i]], arr[i - 1][j]);
 //                 }
 //                 else{
-//                     arr[i][j]=Math.min(arr[i-1][j],(1+arr[i][j-coins[i]]));
+//                     // Ignore the highest possible coin:
+//                     arr[i][j] = arr[i - 1][j];
 //                 }
 //             }
 //         }
@@ -72,6 +74,6 @@ public class DP_CoinChange {
         //System.out.println(coinChange(new int[]{1,3,4,5}, 7));
 
         System.out.println("The minimum amount of coin is :"+OptimumCoinChange(input,11));
-        //System.out.println("possible combination:"+coinChange(input,11));
+        //System.out.println("possible combination using approach :"+coinChange(input,11));
     }
 }

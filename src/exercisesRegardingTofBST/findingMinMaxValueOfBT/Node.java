@@ -1,4 +1,4 @@
-package exercisesRegardingTofBST.findingMinMaxOfBT;
+package exercisesRegardingTofBST.findingMinMaxValueOfBT;
 
 public class Node {
     int data;

@@ -102,9 +102,6 @@ public class Main {
 
     }
     public  void helperClosest(Node node, int target) {
-
-
-
         if (node == null) {
             return;
         }
@@ -274,10 +271,10 @@ In a binary tree, the root node is at depth 0, and children of each depth k node
         //System.out.println("The maximum height is :"+getMaxHeight(root));
 //
        Main mm= new Main();
-       int value=mm.findClosetNodeToTarget(root,6);
+       int value=mm.findClosetNodeToTarget(root,27);
 //
 //
-        //System.out.println("The closet value near to target is :" +value);
+        System.out.println("The closet value near to target is :" +value);
 //
 //        preorderIterative(root);
 //        System.out.println();
