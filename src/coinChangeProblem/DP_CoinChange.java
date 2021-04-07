@@ -11,7 +11,9 @@ public class DP_CoinChange {
     If that amount of money cannot be made up by any combination of the coins, return -1.
     You may assume that you have an infinite number of each kind of coin.
      */
-    static int countWays(int[] coins, int targetCoinChange) {
+
+    //approach 1
+  public  static int countWays(int[] coins, int targetCoinChange) {
         int[] wayOfCoinChanges = new int[targetCoinChange+1];
 
         wayOfCoinChanges[0] = 1;
@@ -28,6 +30,7 @@ public class DP_CoinChange {
 
 
 
+    //approach 2
     public static int OptimumCoinChange(int[] coins, int amount) {
 
         int dp[]= new int[amount+1];
