@@ -7,10 +7,13 @@ public class Main {
 
  //longest substring without repeating characters
     public static int lengthOfLongestSubstring(String s) {
+        if(s==null||s.length()==0){
+            return 0;
+        }
 
         int maxCount=0;
         int i=0;
-        int j=1;
+        int j=0;
         int len=s.length();
         Set<Character> set= new HashSet<>();
 

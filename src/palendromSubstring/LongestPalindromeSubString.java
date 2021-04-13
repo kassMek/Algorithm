@@ -35,9 +35,6 @@ public class LongestPalindromeSubString {
         while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
             left--;
             right++;
-
-
-
         }
         return s.substring(left + 1, right);
     }
