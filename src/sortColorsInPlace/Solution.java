@@ -31,15 +31,46 @@ public class Solution {
         }
     }
 
+    //helper method
     public static void swap( int [] arr, int i, int j){
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
     }
 
+
+    //approach 2 sorting colors
+
+    public static void sortColorsUsingCountingZerosOnesTwos(int[] nums) {
+        int zero = 0;
+        int one = 0;
+
+        for(int num : nums) {
+            if(num == 0) {
+                zero++;
+            } else if(num == 1) {
+                one++;
+            }
+        }
+
+        int i = 0;
+        while(zero > 0) {
+            nums[i++] = 0;
+            zero--;
+            }
+        while(one > 0) {
+            nums[i++] = 1;
+            one--;
+           }
+        while(i < nums.length) {
+            nums[i++] = 2;
+        }
+    }
+
+
     public static void main (String[] args) {
         int [] input={2,0,2,1,1,0};
-                sortColors(input);
+        sortColorsUsingCountingZerosOnesTwos(input);
                 for( int tt:input){
                     System.out.print(tt+"\t");
                 }

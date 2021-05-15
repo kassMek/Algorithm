@@ -33,7 +33,10 @@ For example,
     public static int canPermutePalindromeUsingSet(String s) {
         Set<Character> left = new HashSet<>();
          int possiblePalindrome=0;
-
+ /*
+ Note:If a string can form a palindrome, it should contain characters with even number of occurences and one character with odd number of occurences ,
+ or only characters with even number of occurences.
+  */
         for(int i = 0; i < s.length(); i++){
             if(left.contains(s.charAt(i))){
                 left.remove(s.charAt(i));
@@ -71,6 +74,14 @@ For example,
   }
     public static void main (String[] args) {
 
-        System.out.println("can form palindrome:"+canPermutePalindromeUsingSet("abbb"));
+       System.out.println("can form palindrome:"+canPermutePalindromeUsingSet("abbb"));
+
+        String test="abc";
+        for(int i=0;i<test.length();i++){
+            for(int j=i+1;j<=test.length();j++){
+                String sub=test.substring(i,j);
+                System.out.println(sub);
+            }
+        }
     }
 }

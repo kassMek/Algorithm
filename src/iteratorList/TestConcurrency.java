@@ -21,30 +21,30 @@ public class TestConcurrency {
                 it.remove();
         }
         System.out.println("List Value:" + myList);
-//
-//        Map<String, String> myMap = new HashMap<String, String>();
-//
-//        myMap.put("1", "1");
-//        myMap.put("2", "2");
-//        myMap.put("3", "3");
-//
-//        Iterator<String> it1 = myMap.keySet().iterator();
-//        while (it1.hasNext()) {
-//            String key = it1.next();
-//            System.out.println("Map Value:" + myMap.get(key));
-//            if (key.equals("2")) {
-//                //myMap.put("1", "14");
-//                //myMap.put("4", "4");
-//            }
-//        }
-//
-//
-//        //creating unmodifiable collection
-//        List<Character> list = new ArrayList<Character>();
-//        list.add('X');
-//        list.add('Y');
-//        List<Character> mychars=Collections.unmodifiableList(list);
-//        //mychars.add('y');
+
+        Map<String, String> myMap = new HashMap<String, String>();
+
+        myMap.put("1", "1");
+        myMap.put("2", "2");
+        myMap.put("3", "3");
+
+        Iterator<String> it1 = myMap.keySet().iterator();
+        while (it1.hasNext()) {
+            String key = it1.next();
+            System.out.println("Map Value:" + myMap.get(key));
+            if (key.equals("2")) {
+                myMap.put("2", "34");
+                //myMap.put("4", "4");
+            }
+        }
+
+
+        //creating unmodifiable collection
+        List<Character> list = new ArrayList<Character>();
+        list.add('X');
+        list.add('Y');
+        List<Character> mychars=Collections.unmodifiableList(list);
+        mychars.add('y');
 //
 //          //creating synchronized list
 //        List<String> kassList =Collections.synchronizedList(new ArrayList<String>());

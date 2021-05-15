@@ -30,8 +30,6 @@ public class FindPair {
         return answer;
     }
 
-    //!answer.containsValue(given.get(key))
-
     public static void main(String[] args) {
         int[] A = { 8, 7, 2, 5, 5,3, 1 };
 

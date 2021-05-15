@@ -44,6 +44,7 @@ public final class Employee {
         Employee emp= new Employee("Kassahun","Assfaw","kassamsay@gmail.com",myAddress);
         System.out.println(emp.getAddress().getState());
         //myAddress.setState("Georgia");
+        //System.out.println(emp.getAddress().getState());
 
         //trying to change the Employee address state to Georgia
         emp.getAddress().setState("Georgia"); //the state name remains to Texas

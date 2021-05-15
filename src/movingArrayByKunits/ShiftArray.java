@@ -45,7 +45,9 @@ public class ShiftArray {
 
     public static int[] rotationBySwapping(int [] arr , int d ){
         int [] result=arr;
-
+       if(d>arr.length){
+           d= d% arr.length;
+       }
         swapArray(arr,0,arr.length-1);
 
         //rotating to the  right
@@ -55,7 +57,6 @@ public class ShiftArray {
         //rotating to the  left
         //swapArray(arr,0,d);
         //swapArray(arr,d+1,arr.length-1);
-
         return result;
     }
 
@@ -100,7 +101,8 @@ public class ShiftArray {
 
         int[] input = new int[]{1, 2, 3, 4, 5, 6,7};
         int [] arr = {10, 20, 30, 40, 50};
-        int[] ans = rotationBySwapping(input, 3);
+        int[] kass={1,2,3,4,5};
+        int[] ans = rotateItToTheRight(kass, 4);
 
         //int [] rotatedReversed=reverseArray(arr);
 

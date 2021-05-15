@@ -29,7 +29,7 @@ public class CreatingSynchronizedArrayList {
                 String value= (String) it.next();
                 System.out.println(value);
                 if(value.equals("code")){
-                    list.remove("code");
+                    //list.remove("code");
 
                      // It will throw ConcurrentModificationException because we cannot modify list during Iteration.
                     //list.add("iterator");
