@@ -20,7 +20,7 @@ public class Solution {
 
     public  static int maxSubArray(int[] nums) {
 
-        int max_soFar=nums[0];
+        int max_soFar=Integer.MIN_VALUE;
         int max_current=0;
         for( int i=0;i<nums.length;i++){
             max_current=max_current+nums[i];

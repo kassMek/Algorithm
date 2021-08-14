@@ -45,7 +45,41 @@ public class Main {
          return false;
     }
 
-    // approach 2
+
+
+    //approach 2
+
+    public static  boolean detectCapitalWithOneLoop(String word) {
+          if(word==null){
+              return false;
+          }
+
+        int upperCaseCounter=0;
+        int lowerCaseCounter=0;
+
+        for( int i=0;i<word.length();i++){
+            if(Character.isUpperCase(word.charAt(i))){
+                upperCaseCounter++;
+            }
+            else if(Character.isLowerCase(word.charAt(i))){
+                lowerCaseCounter++;
+            }
+        }
+
+        if(upperCaseCounter==word.length()){
+            return true;
+        }
+        else if(Character.isUpperCase(word.charAt(0)) &&lowerCaseCounter==word.length()-1 ){
+            return true;
+        }
+
+        else if(lowerCaseCounter==word.length()){
+            return true;
+        }
+
+        return false;
+    }
+    // approach 3
     public static boolean approachTwoDetectCapitalUse(String word) {
      boolean match1=true;
      boolean match2=true;

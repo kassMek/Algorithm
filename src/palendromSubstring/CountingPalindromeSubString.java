@@ -26,7 +26,8 @@ public class CountingPalindromeSubString {
     public static void main (String[] args) {
 
         String input="aaa";
-        System.out.println(countSubstrings(input));
+        String str="12321";
+        System.out.println(countSubstrings(str));
 
     }
 }

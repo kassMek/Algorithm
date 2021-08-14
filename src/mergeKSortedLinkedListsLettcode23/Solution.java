@@ -18,7 +18,7 @@ where n=max number of list and m=max number of nodes in a list .
 
 
 //run time
-public class Solution {
+public class  Solution {
 
     public static ListNode mergeKLists(ListNode[] lists) {
         PriorityQueue<Integer> minHeap= new PriorityQueue<>();

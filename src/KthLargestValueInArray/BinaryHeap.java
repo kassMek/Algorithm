@@ -61,6 +61,7 @@ public class BinaryHeap {
 
     /*
       using sorting
+
       complexity....O(nlogn)
      */
     public static int getKthLargestElementUsingSorting( int [] arr, int k){
@@ -75,7 +76,7 @@ public class BinaryHeap {
     public static void main (String[] args) {
 
         int [] input={10,7,11,30,20,38,2,45};
-        System.out.println("the 4 largest element is :"+getKthLargestElementUsingSorting(input,5));
+        System.out.println("the largest element is :"+kthLargestElementUsingMinHeap(input,4));
 
     }
 }

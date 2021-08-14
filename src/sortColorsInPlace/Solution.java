@@ -54,20 +54,27 @@ public class Solution {
         }
 
         int i = 0;
-        while(zero > 0) {
+//        while(zero > 0) {
+//            nums[i++] = 0;
+//            zero--;
+//            }
+//        while(one > 0) {
+//            nums[i++] = 1;
+//            one--;
+//           }
+
+        while(i <zero) {
             nums[i++] = 0;
-            zero--;
-            }
-        while(one > 0) {
+        }
+        while(one>0) {
             nums[i++] = 1;
             one--;
-           }
+        }
+
         while(i < nums.length) {
             nums[i++] = 2;
         }
     }
-
-
     public static void main (String[] args) {
         int [] input={2,0,2,1,1,0};
         sortColorsUsingCountingZerosOnesTwos(input);

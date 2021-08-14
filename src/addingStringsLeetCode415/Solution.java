@@ -1,4 +1,4 @@
-package addingStringsLeetCode415;
+package addingStrings;
 
 
 import java.util.HashMap;

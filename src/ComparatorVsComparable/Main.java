@@ -13,9 +13,9 @@ public class Main {
         list.add( new LapTop("HP",250,1800));
         list.add( new LapTop("Lenovo",275,3500));
         Collections.sort(list);
-//        for(LapTop ll:list) {
-//            System.out.println(ll);
-//        }
+        for(LapTop ll:list) {
+            System.out.println(ll);
+        }
 
         ArrayList<Movie> moveList = new ArrayList<Movie>();
         moveList.add(new Movie("Force Awakens", 8.3, 2015));
@@ -25,9 +25,9 @@ public class Main {
 
         //Collections.sort(moveList); // using comparable
         Collections.sort(moveList, new MovieNameComparator()); //using comparator
-        for(Movie mm:moveList) {
-            System.out.println(mm);
-        }
+//        for(Movie mm:moveList) {
+//            System.out.println(mm);
+//        }
 
     }
 }

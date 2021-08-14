@@ -42,8 +42,8 @@ public class Solution {
     }
 
     public static void main (String[] args) {
-        int [] input={ 1,1,1};
-        System.out.println("count is :"+subarraySum(input,2));
+        int [] input= {3,4,7,2,-3,1,4,2};;
+        System.out.println("count is :"+subarraySum(input,7));
 
     }
 }

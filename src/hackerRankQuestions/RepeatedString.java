@@ -24,7 +24,8 @@ public class RepeatedString {
             list.add(s.charAt(i));
         }
         int k=0;
-         for( int j=1;j<=n;j++){ map.put(list.get(k),map.getOrDefault(list.get(k),0)+1);
+         for( int j=1;j<=n;j++){
+             map.put(list.get(k),map.getOrDefault(list.get(k),0)+1);
 
              k++;
              if(k==list.size()){

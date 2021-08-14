@@ -21,16 +21,16 @@ public class Solution {
 
         Node current= head;
 
-        while(head.next!=null){
-            if (head.data==head.next.data){
-                head.next=head.next.next;
+        while(current.next!=null){
+            if (current.data==current.next.data){
+                current.next=current.next.next;
             }
             else{
-                head=head.next;
+                current=current.next;
             }
         }
 
-        return current;
+        return head;
     }
 
     public static void print(Node head){

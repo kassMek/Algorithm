@@ -2,12 +2,12 @@ package queueImplimentationUsingLinkedListAndArray;
 
 public class QueueUsingArray {
 
+    private int queueArray[];
     private int maxSize;
     private int front;
     private int rear;
     private int currentSize;
 
-    private int queueArray[];
     public QueueUsingArray(int maxSize) {
         this.maxSize = maxSize;
         this.front = 0;

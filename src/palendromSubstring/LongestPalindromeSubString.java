@@ -50,7 +50,5 @@ public class LongestPalindromeSubString {
         System.out.println(newValue.equals(old));
         System.out.println(old==newValue);
 
-
-
     }
 }

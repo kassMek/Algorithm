@@ -30,6 +30,6 @@ public class NiceTeam {
         int [] myArray=new int []{ 1,2,3,4,5,6};
         int [] zeros=new int []{ 1,3,1,4,5};
 
-        System.out.println("The number of pairs is :"+findPairs(myArray,4));
+        System.out.println("The number of pairs is :"+findPairs(input,4));
     }
 }

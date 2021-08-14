@@ -16,10 +16,8 @@ public class FiboUsingMemoization {
 		   }
 		    return  hm.get(n);
 		    
-//		      if( n==0)
-//		      	return 0;
-//		      if(n<=2)
-//		      	return 1;
+//		      if( n<=1)
+//		      	return n;
 //		      return getFibonacciNumber(n-1)+ getFibonacciNumber(n-2);
 		      
 	}

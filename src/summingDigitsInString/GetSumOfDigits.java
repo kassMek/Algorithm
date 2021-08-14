@@ -6,7 +6,7 @@ public class GetSumOfDigits {
 
         int sum=0;
         int intermediate=0;
-        String initialValue="0";
+        String initialValue="";
 
         for( int i=0;i<str.length();i++){
 
@@ -15,14 +15,15 @@ public class GetSumOfDigits {
 
                 initialValue+=ch;
             }
-            else{
+            else if(initialValue.length()>0){
                 intermediate=Integer.parseInt(initialValue);
                 sum+=intermediate;
-               initialValue="0";
+               initialValue="";
             }
         }
 
-        return sum+Integer.parseInt(initialValue);
+        //return sum+Integer.parseInt(initialValue);
+       return  initialValue.length()>=1?sum+Integer.parseInt(initialValue):sum;
     }
 
     public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class GetSumOfDigits {
         String myString="-12hello54man292";
         String kkt="123ab!-45c";
 
-        System.out.println("The sum of integers in string is:"+digitSum(myString));
+        System.out.println("The sum of integers in string is:"+digitSum(kkt));
         //System.out.println("after conversion :"+Integer.parseInt("-1234"));
 
 

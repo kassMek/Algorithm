@@ -23,6 +23,8 @@ public class Solution {
 
         System.out.println(isValid? "YES "+sub: "NO");
     }
+
+
     public static void main (String[] args) {
 
         String input="91011";

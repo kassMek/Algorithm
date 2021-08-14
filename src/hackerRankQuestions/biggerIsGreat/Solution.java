@@ -43,6 +43,6 @@ public class Solution {
     public static void main (String[] args) {
 
         String input="bb";
-        System.out.println("next new String is :"+biggerIsGreater(input));
+        System.out.println("next new String is :"+biggerIsGreater("dkhc"));
     }
 }

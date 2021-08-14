@@ -2,7 +2,7 @@ package java8Exercises;
 
 import java.util.Objects;
 
-class Student{
+public class Student{
     int id;
     String name;
     int age;
